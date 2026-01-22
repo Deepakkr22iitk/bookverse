@@ -1,0 +1,273 @@
+/* Login and sign-up styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none !important;
+}
+.container{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 15px 15px black;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.form h2{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Ariel Narrow Bold', sans-serif;
+    margin: 40px;
+}
+.box{
+    padding: 12px 30px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+}
+.check{
+    margin-right: 12px;
+}
+.terms{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+}
+#submit{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #750000;
+}
+
+.form a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.form a:hover{
+    color: #fd4e4e;
+}
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #750000;
+}
+
+.side img{
+    width: 450px;
+    height: 450px;
+}
+
+/* Homepage styling */
+
+.home{
+    background-color: whitesmoke;
+    height: 1600px;
+    width: 1600px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    font-family: monospace;
+    position: fixed;
+    z-index: 1000;
+}
+
+.topnav img.book_img {
+    height:60px; 
+    width: 60px; 
+    margin-right: 10px; 
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block; 
+}
+
+.topnav a:hover, a:focus {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a:active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.dropdown {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: monospace;
+} 
+
+
+.dropdown option {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+
+.dropdown:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.b1{
+    background-image: url(book_back4.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%;
+    position: relative;
+    z-index: 0;
+}
+.genres{
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.genres div{
+    background-color: #c9d1cb;
+    max-width: 100%;
+    margin: 10px;
+    padding: 20px;
+    font-size: large;
+    text-align: center;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+}
+
+.genres a{
+    color: black;
+    text-decoration: none;
+}
+
+.genres div:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.home h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.home pre{
+    font-size: 20px;
+}
+
+.home p{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.popular{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
+}
+
+.popular div{
+    background-color: #c9d1cb;
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 8px;
+    font-size: large;
+    font-weight: 700;
+    font-family: monospace;
+    text-align: center;
+}
+
+.book_pic{
+    height: 400px;
+    width: 315px;
+}
+
+.foot{
+    display: flex;
+    background-color: #c9d1cb;
+    flex-direction: column;
+}
+
+.foot div{
+    margin: 10px;
+    margin-left: 120px;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.f1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+hr{
+    color: #333;
+    border: none;
+    border-top: 2px solid black;
+}
+
+.foot a{
+    color: #333;
+    text-decoration: none;
+}
+
+/*Extra Styling*/

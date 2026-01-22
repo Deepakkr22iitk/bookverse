@@ -1,0 +1,204 @@
+/* Add these styles to your existing CSS file */
+
+.search-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-header h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .search-form {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 12px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  }
+  
+  .search-results h3 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  .book-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .book-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .book-cover-container {
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+  }
+  
+  .search-book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .book-card:hover .search-book-cover {
+    transform: scale(1.05);
+  }
+  
+  .book-info-container {
+    padding: 15px;
+  }
+  
+  .book-title {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .book-author {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .book-rating-small {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .book-rating-small .star {
+    font-size: 16px;
+    margin-right: 1px;
+  }
+  
+  .rating-value-small {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .book-genres-small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .genre-tag-small {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .results-grid {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    
+    .book-cover-container {
+      height: 200px;
+    }
+    
+    .book-title {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-input {
+      width: 100%;
+    }
+    
+    .results-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    
+    .book-cover-container {
+      height: 180px;
+    }
+  }
+
+  /* Add these styles to your existing CSS file */
+
+.search-nav-link {
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .search-nav-link:hover {
+    color: #4CAF50;
+  }
+  
+  /* Add a visual indication when search is active */
+  .search-nav-link.active {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  /* Optional: Add a search icon */
+  .search-nav-link::before {
+    content: "🔍 ";
+    font-size: 14px;
+  }

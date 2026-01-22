@@ -1,0 +1,350 @@
+/*For book details*/
+.book-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .book-header {
+    margin-bottom: 30px;
+  }
+  
+  .back-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .book-detail {
+    display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+  }
+  
+  .book-cover img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  .book-info {
+    width: 100%;
+  min-width: 0;
+
+  }
+  
+  .book-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .book-info h2 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .book-rating {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    color: #ddd;
+    font-size: 24px;
+    margin-right: 2px;
+  }
+  
+  .star.filled {
+    color: #FFD700;
+  }
+  
+  .star.clickable {
+    cursor: pointer;
+  }
+  
+  .rating-value {
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .review-count {
+    margin-left: 5px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .book-genres {
+    margin-bottom: 20px;
+  }
+  
+  .genre-tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 6px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  
+  .book-actions {
+    margin-bottom: 20px;
+  }
+  
+  .add-to-shelf-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-to-shelf-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .book-description {
+    margin-top: 30px;
+    clear: both; /* Ensures description starts below both image and info */
+  width: 100%;
+  }
+  
+  .book-description h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .book-description p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .book-info {
+      max-width: 100%;
+    }
+  }
+  
+  .book-reviews {
+    margin-top: 40px;
+  }
+  
+  .book-reviews h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .review-form-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .write-review-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .review-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .review-form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .rating-input {
+    margin-bottom: 15px;
+  }
+  
+  .rating-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .star-rating {
+    display: flex;
+  }
+  
+  .comment-input {
+    margin-bottom: 20px;
+  }
+  
+  .comment-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .comment-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .submit-review-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-prompt {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .login-prompt a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  .no-reviews {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .review-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .reviewer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reviewer-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .review-date {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .review-content {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .review-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .book-detail {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .book-cover {
+        width: 100%;
+    }
+    
+    .book-cover img {
+      width: 200px;
+    }
+  }

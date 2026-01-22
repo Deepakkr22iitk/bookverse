@@ -1,0 +1,174 @@
+.bookshelf-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .bookshelf-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .shelf-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .add-shelf-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-shelf-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-shelf-form input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex-grow: 1;
+  }
+  
+  .add-shelf-form button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-shelf-form button:last-child {
+    background-color: #f44336;
+  }
+  
+  .shelf {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .shelf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .shelf-controls button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .empty-shelf {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px 0;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .book-cover {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .book-info {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .book-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+  }
+  
+  .book-author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .progress-container {
+    margin-bottom: 15px;
+  }
+  
+  .progress-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .progress-container input {
+    width: 100%;
+  }
+  
+  .book-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .book-actions select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .book-actions button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .return-home {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .return-home a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .return-home a:hover {
+    text-decoration: underline;
+  }
